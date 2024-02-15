@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isRobotOn = switchButton.classList.contains('on');
             if (!isRobotOn) {
                 switchButton.classList.add('on');
-                alert("Hi, this is Bat-Robot!"); // Visualizza un messaggio di avviso
+                alert("Hi, I am Bat-Robot!"); // Visualizza un messaggio di avviso
             } else {
                 switchButton.classList.remove('on');
             }
