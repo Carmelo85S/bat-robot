@@ -211,8 +211,8 @@ body{
 
 .right-leg,
 .left-leg{
-    width: 80px;
-    height: 280px;
+    width: 75px;
+    height: 260px;
     margin: 0 10px;
     position: relative;
     top: -10%;
@@ -223,12 +223,13 @@ body{
 .command {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Posiziona i bottoni a destra */
     align-items: center;
+    margin-top: 30px; /* Aggiungi uno spazio sopra i bottoni */
 }
 
 .button {
-    margin: 30px;
+    margin: 5px; /* Riduci il margine per avere uno spazio più piccolo tra i bottoni */
     width: 100px;
     height: 50px;
     background-color: white;
@@ -244,8 +245,7 @@ body{
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
     .command {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
     }
     .button{
         margin:5px;
