@@ -57,11 +57,11 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px; /* Modifica la larghezza del mantello in base alle tue esigenze */
-    height: 400px; /* Modifica l'altezza del mantello in base alle tue esigenze */
-    background-color: rgb(78, 74, 78); /* Colore del mantello */
-    border-radius: 50px 50px 0 0; /* Bordi arrotondati nella parte inferiore */
-    z-index: -2; /* Posiziona il mantello dietro il corpo del robot */
+    width: 300px; 
+    height: 400px; 
+    background-color: rgb(78, 74, 78); 
+    border-radius: 50px 50px 0 0; 
+    z-index: -2; 
     transition: all .3s ease-in-out;
 }
 
@@ -97,7 +97,7 @@ body{
     width: 30px;
     height: 3px;
     border-radius: 100px;
-    background-color: rgb(31, 30, 30); /* Colore degli occhi chiusi */
+    background-color: rgb(31, 30, 30); 
     margin-top: 10px;
 }
 
@@ -131,10 +131,10 @@ body{
     position: absolute;
     left: 50%;
     transform: translate(-50%, 70%);
-    width: 50px; /* Modifica la larghezza del mantello in base alle tue esigenze */
-    height: 50px; /* Modifica l'altezza del mantello in base alle tue esigenze */
-    border-radius: 100px; /* Bordi arrotondati nella parte inferiore */
-    z-index: 4; /* Posiziona il mantello dietro il corpo del robot */
+    width: 50px; 
+    height: 50px; 
+    border-radius: 100px;
+    z-index: 4; 
     transition: background-color 0.1s, box-shadow 0.3s;
 }
 
@@ -223,13 +223,13 @@ body{
 .command {
     width: 100%;
     display: flex;
-    justify-content: flex-end; /* Posiziona i bottoni a destra */
+    justify-content: flex-end; 
     align-items: center;
-    margin-top: 30px; /* Aggiungi uno spazio sopra i bottoni */
+    margin-top: 30px; 
 }
 
 .button {
-    margin: 5px; /* Riduci il margine per avere uno spazio più piccolo tra i bottoni */
+    margin: 5px;
     width: 100px;
     height: 50px;
     background-color: white;
@@ -257,8 +257,8 @@ body{
 }
 
 .button:active {
-    background-color: rgb(235, 249, 126); /* Cambia il colore quando il pulsante è cliccato */
-    box-shadow: 2px 2px 2px black; /* Riduci l'ombra quando il pulsante è cliccato */
+    background-color: rgb(235, 249, 126);
+    box-shadow: 2px 2px 2px black;
 }
 
 
