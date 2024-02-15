@@ -1,0 +1,265 @@
+body{
+    background-color: rgb(184, 184, 246);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    overflow: hidden;
+}
+
+.robots{
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+}
+
+.head,
+.upper-body .right-arm,
+.upper-body .left-arm,
+.upper-body .torso,
+.upper-body .belly,
+.leg .right-leg,
+.leg .left-leg,
+.ears .left-ear,
+.ears .right-ear{
+    background-color: rgb(31, 30, 30);
+}
+
+.ears{
+    width: 77%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    position: relative;
+    top: 2%;
+}
+
+.right-ear,
+.left-ear{
+    width: 30px;
+    height: 40px;
+    background-color: rgb(12, 86, 86);
+}
+
+.right-ear{
+    border-radius: 100% 0% 0% 100% / 100% 87% 13% 0%;
+}
+
+.left-ear{
+    border-radius: 0% 100% 0% 100% / 100% 87% 13% 0% ;
+}
+.head{
+    width: 130px;
+    height: 100px;
+    margin-top: 0px;
+    margin: auto;
+}
+
+.coat{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Modifica la larghezza del mantello in base alle tue esigenze */
+    height: 400px; /* Modifica l'altezza del mantello in base alle tue esigenze */
+    background-color: rgb(78, 74, 78); /* Colore del mantello */
+    border-radius: 50px 50px 0 0; /* Bordi arrotondati nella parte inferiore */
+    z-index: -2; /* Posiziona il mantello dietro il corpo del robot */
+    transition: all .3s ease-in-out;
+}
+
+.eye{
+    width: 130px;
+    height: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.right-eye,
+.left-eye{
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: all 0.3s, box-shadow 0.3s;
+}
+
+.right-eye.hovered,
+.left-eye.hovered{
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: yellow;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.right-eye.closed,
+.left-eye.closed {
+    width: 30px;
+    height: 3px;
+    border-radius: 100px;
+    background-color: rgb(31, 30, 30); /* Colore degli occhi chiusi */
+    margin-top: 10px;
+}
+
+.mouth{
+    width:70px;
+    height:35px;
+    background-color: rgb(181, 181, 175);
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smile{
+    width: 20px;
+    height: 1px;
+    background-color: rgb(255, 253, 253);
+    transition: all .3s ease-in-out;
+}
+
+.smile.hovered{
+    width: 60px;
+    height: 20px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.center-circle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    width: 50px; /* Modifica la larghezza del mantello in base alle tue esigenze */
+    height: 50px; /* Modifica l'altezza del mantello in base alle tue esigenze */
+    border-radius: 100px; /* Bordi arrotondati nella parte inferiore */
+    z-index: 4; /* Posiziona il mantello dietro il corpo del robot */
+    transition: background-color 0.1s, box-shadow 0.3s;
+}
+
+.center-circle.hovered {
+    background-color: yellow;
+    box-shadow: 0 0 45px rgb(255, 255, 255);
+}
+
+.upper-body{
+    width: 350px;
+    height: 200px;
+    display: flex;
+    margin-right: auto;
+}
+
+.right-arm,
+.left-arm{
+    width: 100px;
+    height: 200px;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.right-arm{
+    border-radius: 100px 10px;
+    animation: rotate 2s;
+    transform-origin: top right;
+}
+
+.left-arm{
+    border-radius: 10px 100px;
+}
+
+.torso{
+    width: 400px;
+    height: 120px;
+    margin-top: 3px;
+    background-color: black;
+    border-radius: 30px 30px 60px 60px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.belly{
+    width: 150px;
+    height: 80px;
+    background-color: black;
+    border-radius: 0px 0px 30px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    z-index: 1;
+    position:relative;
+    top: 97%;
+}
+
+.lower-body{
+    display: flex;
+    justify-content: center;
+}
+
+.slips{
+    width: 110px;
+    height: 40px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 0 0 50px 50px;
+    margin: auto;
+}
+
+.leg{
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-leg,
+.left-leg{
+    width: 80px;
+    height: 280px;
+    margin: 0 10px;
+    position: relative;
+    top: -10%;
+    border-radius: 40px;
+    
+}
+
+.command {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+    .command {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        margin:5px;
+    }
+}
+
+.button:hover{
+    background-color: yellow;
+}
+
+.button:active {
+    background-color: rgb(235, 249, 126); /* Cambia il colore quando il pulsante è cliccato */
+    box-shadow: 2px 2px 2px black; /* Riduci l'ombra quando il pulsante è cliccato */
+}
+
+
+
